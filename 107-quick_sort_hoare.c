@@ -39,16 +39,12 @@ int pivot, above, below;
 pivot = array[right];
 for (above = left - 1, below = right + 1; above < below;)
 {
-do 
-{
+do {
 above++;
-} 
-while (array[above] < pivot);
-do 
-{
+} while (array[above] < pivot);
+do {
 below--;
-} 
-while (array[below] > pivot);
+} while (array[below] > pivot);
 
 if (above < below)
 {
